@@ -1,3 +1,79 @@
+.careHeader .navbar-brand h1 {
+    font-size: 34px !important;
+    font-weight: 600 !important;
+}
+
+.careHeader .nav-item {
+    font-size: 1.2rem !important;
+    text-transform: capitalize !important;
+    padding: 14px 6px !important;
+    font-weight: 400 !important;
+}
+
+.careCarousel .carousel-item {
+    position: relative;
+    /* background-color: #0c0c0c; */
+    z-index: 0;
+    
+    filter: brightness(0.5);
+}
+
+.careCarousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+
+.careCarousel .carousel-caption {
+    bottom: 50% !important;
+    transform: translateY(50%);
+   
+}
 
 
+.careCarousel .carousel-caption h5 {
+    font-size: 66px !important;
+    line-height: 76px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-transform: capitalize !important;
+    filter: none;
+    
+}
 
+.careCarousel .carousel-caption p {
+    color: #fff !important;
+    font-weight: 300 1 !important;
+    text-transform: capitalize !important;
+    line-height: 30px !important;
+    opacity: 0.9 !important;
+}
+
+.careCarousel .carousel-caption .readMore {
+    padding: 12px 35px !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    text-transform: capitalize !important;
+    font-weight: 400 !important;
+    transition: 0.3s ease-in !important;
+    border-radius: 10px !important;
+    border-color: transparent !important;
+    color:  #189A46 !important;
+    background-color: #fff !important;
+
+
+}
+
+.careCarousel .carousel-caption .contactUs {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 35px;
+    background-color: transparent;
+    border-radius: 10px;
+}
