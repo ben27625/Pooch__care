@@ -7,6 +7,10 @@ body, html {
     box-sizing: border-box;
 }
 
+body img {
+    border-radius: 10px;
+}
+
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
@@ -24,21 +28,60 @@ p {
     color: #afafaf;
     font-family: 'Jost', sans-serif;
 }
+
+
+
 :root {
+  
+    --primary-color: #189A46;
+    --secondary-color: #f53626;
+    --font-color: #afafaf;
+    --bg-color:#151515;
+    --heading-color: #ddd;
+    --border-color: #333;
+    --border-light: #444;
+    --nav-color: #fff;
+    --bg-light: #222;
+    --dropdown-color:#151515;
+    --iframe-filter: grayscale(100%);
+    --widget-bg: #131617;
+    --border-radius: 10px;
+  }
+  
+  [data-theme="light"] {
     --primary-color: #189A46;
     --secondary-color: #f53626;
     --font-color: #696969;
     --bg-color: #fff;
     --heading-color: #000c04;
-    --border-radius: 10px;
+    
     --border-color: #ddd;
-    --border-light: #f0f3f0;
+    --border-light:#f0f3f0;
     --nav-color: #292922;
     --dropdown-color: #fff;
     --bg-light: rgba(147, 107, 232, 0.05);
     --iframe-filter: grayscale(0%);
     --widget-bg: #3f3a64;
+
+  }
+
+
+  .sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: var(--secondary);
 }
+
+.hny-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+  
 
 :root {
     --bs-blue: #0d6efd;
@@ -92,6 +135,38 @@ p {
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
     --bs-body-bg: #fff;
+} 
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #189A46;
+    --secondary: #f53626;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .careHeader {
@@ -254,4 +329,277 @@ p {
     margin-top: 20px;
     display: inline-block;
     text-transform: capitalize;
+    text-decoration: none;
 }
+
+
+.AboutUs .AboutUs__item .icon i {
+
+    
+    color: var(--primary-color);
+        font-size: 30px;
+}
+
+.AboutUs .AboutUs__content {
+    
+    background-color: var(--bg-light);
+   
+
+}
+
+
+.AboutUs .AboutUs__item {
+
+    padding: 40px 30px;
+    transition: all 0.5s ease 0s;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    position: relative;
+    margin-bottom: 30px;
+    
+    
+}
+
+
+.AboutUs .AboutUs__item a {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--heading-color);
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize
+}
+
+.AboutUs .AboutUs__item:hover {
+    background-color: var(--bg-light);
+}
+
+
+
+.chooseUs .chooseUs_right {
+    align-self: center;
+}
+
+
+.chooseUs .chooseUs__right p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24.5px;
+    color: var(--font-color);
+    margin: 15px 0 35px 0;
+}
+
+.chooseUs .chooseUs__right ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--heading-color);
+    margin: 15px 0;
+    font-weight: 600;
+    list-style: none;
+}
+
+.chooseUs .chooseUs__right ul li span.fa {
+    color: var(--primary-color);
+    margin-right: 12px;
+    background: var(--bg-light);
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.numbers {
+    background-color: var(--primary-color);
+}
+
+.numbers .stats_info {
+    text-align: center;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+}
+
+.numbers .stats_info .counter {
+    font-size:50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom:0;
+}
+
+.numbers .stats_info h4 {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+
+.ourPlans {
+    background: var(--bg-light);
+
+}
+.ourPlans .pricing-sec-7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 5% auto;
+    margin-top: 0;
+    width: 90%;
+}
+
+.ourPlans .pricing-gd-left {
+    background: var(--bg-color);
+    /* padding: 3.5em 2.5em; */
+   border-radius: 6px;
+   align-self: center;
+}
+
+.ourPlans .pricing-7-top {
+    text-align: center;
+
+}
+
+.ourPlans .pricing-7-top h6 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.ourPlans .pricing-7-top h4 {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+
+.ourPlans .pricing-7-top h4  label {
+    font-size: 25px;
+    vertical-align: text-top;
+}
+
+.ourPlans .pricing-7-top h4 span {
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+
+.ourPlans .pricing-7-bottom {
+    text-align: center;
+    padding-top: 1em;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.ourPlans .pricing-7-bottom ul.links {
+    min-height: 120px;
+  
+}
+
+.ourPlans .pricing-7-bottom ul.links li {
+    list-style: none;
+    margin-bottom: 5px;
+    color: #304659;
+
+}
+
+.ourPlans .pricing-7-bottom .buy-button {
+    margin-top: 2em;
+    /* text-align: center; */
+}
+
+.btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: var(--border-radius);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #189A46;
+    border-color: #189A46;
+}
+
+.ourPlans .pricing-gd-left.active {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    z-index: 1;
+    margin: 0;
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+    border-radius: 6px;
+}
+
+.ourPlans .pricing-gd-left.active .pricing-7-top {
+    padding: 3em 2.5em 0.5em;
+    background: var(--primary-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.ourPlans .pricing-gd-left.active .pricing-7-bottom {
+    padding: 2em 2.5em 3.5em;
+}
+
+.ourPlans .pricing-gd-left h5 {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: var(--border-radius)
+}
+
+
+.ourPlans .pricing-gd-left.active  h4 {
+    color: #fff;
+}
+
+.ourPlans .pricing-gd-left.active h4 span {
+    color: #fff;
+}
+
+
+.ourPlans .pric-7-1 .pricing-7 {
+    padding: 3.5em 2.5em;
+    border-right: 0
+}
+
+.ourPlans .pric-7-2 .pricing-7 {
+    padding: 3.5em 2.5em;
+    border-left:0;
+}
+
+
