@@ -765,7 +765,7 @@ div#small-dialog iframe {
 
  .testimonial-width .comment {
     display: block;
-    margin-bottom: 50px ;
+    margin-bottom: 60px ;
     padding: 40px 30px;
     position: relative;
     background: var(--bg-color);
@@ -858,7 +858,7 @@ div#small-dialog iframe {
     left: 0px;
     right: 0px;
    top: 350px;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 
@@ -878,6 +878,7 @@ div#small-dialog iframe {
     transition: opacity .2s ease;
     border-radius: 25px;
     position: relative;
+    margin-top: 40px;
    
 }
 
