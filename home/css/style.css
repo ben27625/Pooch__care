@@ -88,6 +88,25 @@ ul,li {
     padding: 0;
 }
 
+a {
+    color: #189A46;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a.read {
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--heading-color);
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -1007,4 +1026,92 @@ div#small-dialog iframe {
 .midd-footer .copy-footer a {
     color: var(--secondary-color);
     opacity: 0.9;
+}
+
+
+/* About page */
+
+
+.careBreadcrumb {
+    margin-top:90px;
+    background: url(../img/banner4.jpg) no-repeat center;
+    background-size: cover;
+    padding: 1em 0;
+    position: relative;
+    z-index: 1;
+}
+
+
+.careBreadcrumb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #0c0c0c;
+    opacity: .6;
+}
+
+.careBreadcrumb h2.title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.careBreadcrumb .breadcrumb-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content:"";
+}
+
+.careBreadcrumb .breadcrumb-item .fa-solid {
+    font-size: 12px;
+}
+
+
+/* Experience */
+
+
+.experience .exp-content-left h4 {
+    font-size: 22px;
+    line-height: 32px;
+    opacity: 0.9;
+}
+
+/* our history */
+
+.ourHistory .ourHistory-bg {
+    background: url(../img/banner2.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+
+.ourHistory .ourHistory-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    background-color: #0c0c0c;
+}
+
+.ourHistory .ourHistory-bg .ourHistory-content {
+    margin-left: auto;
+max-width: 640px;
+text-align: left;
 }
