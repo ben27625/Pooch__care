@@ -1134,6 +1134,20 @@ div#small-dialog iframe {
     text-align: left;
 }
 
+.ourHistory .ourHistory-bg .ourHistory-content .hny-title {
+    color: #fff;
+}
+
+.ourHistory .ourHistory-bg .ourHistory-content p {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.ourHistory .ourHistory-bg .ourHistory-content h5 {
+    color: #fff;
+    opacity: 0.7;
+}
+
 .ourHistory .ourHistory-bg  .history-gird {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
