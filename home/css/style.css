@@ -1209,3 +1209,25 @@ div#small-dialog iframe {
 
     color: var(--primary-color);
 }
+
+.ourExperts .team-wrap .social a span {
+    font-size:12px;
+    line-height: 30px;
+    display: block;
+}
+
+.ourExperts .team-wrap .team-info:hover .name-pos a {
+    color: var(--primary-color);
+    
+}
+
+.ourExperts .team-wrap .team-info:hover .social-left a {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.ourExperts .team-wrap .team-info:hover img {
+    transform: scale(1.1);
+    border-radius: 6px;
+
+}
