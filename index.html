@@ -40,10 +40,10 @@
     <!-- Link css -->
     <link rel="stylesheet" href="./home/css/style.css" />
   </head>
-  <body>
-    <header class="careHeader fixed-top ">
+  <body id="myBody">
+    <header class="careHeader fixed-top nav-fixed ">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg  ">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><h1 class="text-success fs-1">Pooch Care</h1></a>
             <button
@@ -55,27 +55,27 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="fa-solid fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="#"
+                  <a class="nav-link active " aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">About</a>
+                  <a class="nav-link " href="./home/about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Services</a>
+                  <a class="nav-link " href="./home/services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Gallery</a>
+                  <a class="nav-link" href="#">Gallery</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggl text-white"
+                    class="nav-link dropdown-toggl"
                     href="#"
                     id="navbarDropdownMenuLink"
                     role="button"
@@ -89,43 +89,38 @@
                     class="dropdown-menu bg-black"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <li><a class="dropdown-item text-white" href="#">Blog Posts</a></li>
+                    <li><a class="dropdown-item " href="#">Blog Posts</a></li>
                     <li>
-                      <a class="dropdown-item text-white" href="#">Blog Single</a>
+                      <a class="dropdown-item " href="#">Blog Single</a>
                     </li>
                     <li>
-                      <a class="dropdown-item text-white" href="#">Landing Page</a>
+                      <a class="dropdown-item " href="#">Landing Page</a>
                     </li>
                   </ul>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Pricing</a>
+                    <a class="nav-link " href="#">Contact</a>
                   </li>
                 </li>
               </ul>
-              <div class="mobile-position">
-                <nav class="navigation">
-                    <div class="theme-switch-wrapper">
-                        <label class="theme-switch" for="checkbox">
-                            <input type="checkbox" id="checkbox">
-                            <div class="mode-container">
-                                <i class="gg-sun"></i>
-                                <i class="gg-moon"></i>
-                            </div>
-                        </label>
-                    </div>
-                  </div>
-             
+
+            </div>
+            <div  class="toggler-dark py-3">
+              <button class="btn" id="switchButton"  title="Click to switch theme">
+                <i class="far fa-sun"></i>
+                <i class="far fa-moon"></i>
+              </button>
+            </div>
+          </div>
                 </nav>
                 
-                
-            </div>
+           
             
-          </div>
-          
-        </nav>
+         
         
       </div>
     </header>
+
+
    <section class="careCarousel">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -138,7 +133,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active banner1">
           <!-- <img src="./home/img/banner1.jpg" class="d-block w-100" alt="..."> -->
-          <div class="carousel-caption d-none d-md-block ms-lg-auto text-start">
+          <div class="carousel-caption d-md-block text-start">
             <div class="container">
             <h5>Quality Things for Loving Pets</h5>
             <p>Keeps your Pet Smiling</p>
@@ -150,7 +145,7 @@
         <div class="carousel-item banner2">
           <div class="container">
           <!-- <img src="./home/img/banner2.jpg" class="d-block w-100" alt="..."> -->
-          <div class="carousel-caption d-none d-md-block ms-lg-auto ">
+          <div class="carousel-caption  d-md-block ms-lg-auto text-end ">
             <h5>Delivering happiness for Pets</h5>
             <p>For the love of pets </p>
             <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2 readMore" href="about.html"> Read More</a>
@@ -161,7 +156,7 @@
         <div class="carousel-item banner3">
           <!-- <img src="..." class="d-block w-100" alt="..."> -->
           <div class="container">
-          <div class="carousel-caption d-none d-md-block ms-lg-auto text-start">
+          <div class="carousel-caption  d-md-block  text-start">
             <h5>Quality Things for Loving Pets</h5>
             <p>Keeps your Pet Smiling</p>
             <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2 readMore" href="about.html"> Read More</a>
@@ -172,7 +167,7 @@
         <div class="carousel-item banner4">
           <div class="container">
           <!-- <img src="..." class="d-block w-100" alt="..."> -->
-          <div class="carousel-caption d-none d-md-block ms-lg-auto text-start">
+          <div class="carousel-caption  d-md-block ms-lg-auto text-start">
             <h5>Delivering happiness for Pets</h5>
             <p>We help your Projects</p>
             <a class="btn btn-style btn-white mt-sm-5 mt-4 mr-2 readMore" href="about.html"> Read More</a>
@@ -293,10 +288,10 @@
     <section class="chooseUs py-5">
      <div class="container">
       <div class="row">
-        <div class="chooseUs__left col-6 ">
+        <div class="chooseUs__left col-lg-6 ">
           <img src="./home/img/ab.jpg" alt="" class="img-curve img-fluid">
         </div>
-        <div class="chooseUs__right col-6">
+        <div class="chooseUs__right col-lg-6">
           <h6 class="sub-title">Why Choose Us</h6>
           <h3 class="hny-title">What We Offer for You</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et
@@ -318,19 +313,19 @@
     <section class="numbers py-5">
       <div class="gallery-inner container py-3">
         <div class="row">
-          <div class="stats_info col-lg-3 ">
+          <div class="stats_info col-lg-3 col-6  ">
             <p class="counter">730</p>
             <h4>Happy Clients</h4>
           </div>
-          <div class="stats_info col-lg-3">
+          <div class="stats_info col-lg-3 col-6 ">
             <p class="counter">80</p>
             <h4>Professionals</h4>
           </div>
-          <div class="stats_info col-lg-3">
+          <div class="stats_info col-lg-3 col-6 mt-lg-0 mt-5">
             <p class="counter">812</p>
             <h4>Adopted Pets</h4>
           </div>
-          <div class="stats_info col-lg-3">
+          <div class="stats_info col-lg-3 col-6 mt-lg-0 mt-5">
             <p class="counter">90</p>
             <h4>Awards</h4>
           </div>
@@ -340,7 +335,7 @@
 
     </section>
     <section class="ourPlans py-5">
-      <div class="pricing">
+      <div class="pricing  pt-lg-4 pt-md-3 pb-lg-5 pb-md-4">
         <div class="container">
           <div class="heading text-center mx-auto">
             <p class="sub-title">Our Plans</p>
@@ -350,7 +345,7 @@
             <div class="pricing-gd-left pric-7-1 ">
               <div class="pricing-7">
                 <div class="pricing-7-top">
-                  <h6 class="one-light">Free Package</h6>
+                  <h6 class="">Free Package</h6>
                   <h4>
                     <label for="">$</label>
                     0
@@ -428,7 +423,7 @@
             <div class="pricing-gd-left pric-7-2">
               <div class="pricing-7">
               <div class="pricing-7-top">
-                <h6 class="one-light">Pro Package</h6>
+                <h6 class="">Pro Package</h6>
                 <h4>
                   <label for="">$</label>
                   89
@@ -519,7 +514,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                  <div class="row">
-                  <div class="col-6">
+                  <div class="col-md-6 col-sm-12">
                     <div class="comment">
                       <div class="top">
                         <blockquote>
@@ -535,7 +530,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-6 col-sm-12">
                     <div class="comment">
                       <div class="top">
                         <blockquote>
@@ -555,7 +550,7 @@
                 </div>
                 <div class="carousel-item ">
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6 col-sm-12">
                       <div class="comment">
                         <div class="top">
                           <blockquote>
@@ -571,7 +566,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-sm-12">
                       <div class="comment">
                         <div class="top">
                           <blockquote>
@@ -592,7 +587,7 @@
                 </div>
                 <div class="carousel-item">
                  <div class="row">
-                  <div class="col-6">
+                  <div class="col-md-6 col-sm-12">
                     <div class="comment">
                       <div class="top">
                         <blockquote>
@@ -608,7 +603,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-6 col-sm-12">
                     <div class="comment">
                       <div class="top">
                         <blockquote>
@@ -752,6 +747,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+      }
+    </script>
    
   </body>
 </html>
