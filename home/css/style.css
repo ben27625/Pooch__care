@@ -1358,6 +1358,12 @@ div#small-dialog iframe {
 }
 
 @media screen and (max-width: 768px) {
+    .careHeader .toggler-dark {
+        position: absolute;
+        top: 2px;
+        right: 60px;
+    }
+
     .careCarousel .carousel-caption h5 {
         font-size: 40px;
     }
@@ -1371,11 +1377,26 @@ div#small-dialog iframe {
         width: 75%;
         margin: auto;
     }
+
+    .testimonials .carousel-indicators {
+        top: 720px;
+    }
+
+    .email form.subcribe-wthree button {
+    margin-top:  20px;
+    }
+
+
 }
 
 @media screen and (max-width: 576px){
     /* Home */
-  
+    .careCarousel .carousel-caption h5 {
+        font-size: 30px;
+    }
 
+    .testimonials .carousel-indicators {
+        top: 770px;
+    }
   
 }
