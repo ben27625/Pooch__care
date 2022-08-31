@@ -100,6 +100,7 @@ p {
     --iframe-filter: grayscale(0%);
     --widget-bg: #3f3a64;
     --font-color:  #000c04;
+    --border-radius: 10px;
 
 
     
@@ -206,36 +207,36 @@ a.read {
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
 
-.careHeader.fixed-top {
-    top: 40px !important;
-    height:80px !important;
+.careHeader {
+    top: 40px ;
+    height:80px ;
 }
 
 
 .careHeader .navbar-brand h1 {
-    font-size: 34px !important;
-    font-weight: 500 !important;
-    color:#189a46 !important;
+    font-size: 34px ;
+    font-weight: 500 ;
+    color:#189a46 ;
 }
 
 .careHeader .nav-item {
-    font-size: 1.2rem !important;
-    text-transform: capitalize !important;
-    padding: 14px 6px !important;
-    font-weight: 400 !important;
+    font-size: 1.2rem ;
+    text-transform: capitalize ;
+    padding: 14px 12px ;
+    font-weight: 400 ;
    
 }
 
 .careHeader .nav-item .active {
-    color: var(--primary-color) !important;
+    color: var(--primary-color) ;
 }
 
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: var(--primary-color) !important;
+.careHeader .navbar-nav .nav-link:hover {
+    color: var(--primary-color) ;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.careHeader .navbar-nav .nav-link {
     text-transform: capitalize;
     transition: all 0.5s ease;
     padding: 14px 0;
@@ -245,12 +246,12 @@ a.read {
     color: var(--heading-color);
 }
 
-.navbar-light .navbar-nav .nav-link span {
+.careHeader .navbar-nav .nav-link span {
     font-size: 14px;
     padding-left: 2px;
 }
 
-.navbar-light .navbar-nav .nav-link::before {
+.careHeader .navbar-nav .nav-link::before {
     content: '';
     width: 0;
     height: 1px;
@@ -262,7 +263,7 @@ a.read {
     
 }
 
-.navbar-light .navbar-nav .nav-link:hover::before {
+.careHeader .navbar-nav .nav-link:hover::before {
     content: '';
     width: 100%;
     height: 1px;
@@ -351,12 +352,12 @@ a.read {
 
 
 .careCarousel .carousel-caption h5 {
-    font-size: 66px !important;
-    line-height: 76px !important;
-    font-weight: 700 !important;
-    color: #fff !important;
-    text-transform: capitalize !important;
-    filter: none !important;
+    font-size: 66px ;
+    line-height: 76px ;
+    font-weight: 600;
+    color: #fff ;
+    text-transform: capitalize ;
+    /* filter: none !important; */
     
     
 }
@@ -658,6 +659,13 @@ li {
     /* text-align: center; */
 }
 
+.ourPlans .one-light {
+    color: #fff;
+}
+
+
+
+
 .btn-style {
     padding: 12px 35px;
     font-size: 18px;
@@ -823,6 +831,12 @@ div#small-dialog iframe {
  font-size: 1.2em;
  line-height: 28px;
  color: #afafaf;
+}
+
+
+.testimonial-width .comment blockquote i {
+    font-size: 25px;
+    color: var(--primary-color);
 }
 
 .testimonial-width .comment blockquote q::before {
@@ -1273,4 +1287,95 @@ div#small-dialog iframe {
 
 .dog-content .content-text a:hover {
     color: var(--primary-color);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+
+    
+}
+
+@media screen and (max-width: 992px){
+    .careHeader .navbar-toggler {
+        border: none;
+        color: #fff;
+        background-color: var(--primary-color);
+    }
+
+    .careHeader .navbar-toggler span {
+        color: #fff;
+    }
+
+    .careHeader.nav-fixed {
+        height: auto;
+    }
+
+    .careHeader .navbar-nav {
+        animation-name: none;
+        float: left;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    
+    .careHeader .navbar-nav .nav-item {
+        padding: 0 10px;
+    }
+
+    .careHeader .navbar-nav .nav-link {
+        display: inline-block;
+        padding: 6px 0;
+        text-align: center;
+    }
+
+    .careHeader .navbar {
+        position: relative;
+    }
+    
+
+    
+
+    .careHeader .toggler-dark {
+        position: absolute;
+        top: 5px;
+        right: 60px;
+    }
+
+
+    .careCarousel .carousel-control-prev,.carousel-control-next {
+        display: none;
+    }
+
+
+    .testimonials .carousel-indicators {
+        top: 450px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .careCarousel .carousel-caption h5 {
+        font-size: 40px;
+    }
+
+    .ourPlans .pricing-sec-7 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .ourPlans .pricing-sec-7 .pricing-gd-left {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px){
+    /* Home */
+  
+
+  
 }
